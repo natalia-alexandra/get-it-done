@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1c25c50a2.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Get It Done</title>
+</head>
+
+<body>
+    <main>
+        {% block body_block %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Web App built with Django and PostgreSQL by ON - O.Natalia</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

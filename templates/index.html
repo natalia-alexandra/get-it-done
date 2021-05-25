@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+<div class="main-container">
+    <div class="top">
+        <h1>get it done</h1>
+        <div id="info-box">change the order of sticker by drag and drop them</div>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="btn">
+                <i class="fas fa-plus-circle"></i>
+                add
+            </button>
+        </form>
+    </div>
+    <!-- drop container -->
+    <div class="drop_container" id="drop_container">
+        <i class="far fa-question-circle icon-question" id="icon-question"></i>
+        {% if tasks %}
+        {% for task in tasks %}
+        <!-- card -->
+        <div class="drop_card" id="task">
+            <div class="scotch"></div>
+            <p>{{task}}</p>
+            <a href="{% url 'delete_item' task.id %}" class="btn-item btn-delete">
+                <i class="fas fa-trash-alt" title="delete"></i>
+            </a>
+            <a href="{% url 'update_item' task.id %}" class="btn-item btn-edit">
+                <i class="fas fa-pencil-alt" title="edit"></i>
+            </a>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No task</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
