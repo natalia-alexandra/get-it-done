@@ -1,6 +1,17 @@
-## get it done
+## Sticky Notes
 
-### Todo Web App 
+Take virtual sticky notes in your browser
+
+### Features
+
+- add new note
+- edit task
+- delete note
+- change order of notes using drag & drop
+
+### Tech-Stack
+
+Python, Django, HTML, CSS, PostgreSQL
 
 ![Web App Screenshot](./static/assets/web_app_screenshot.gif)
 
