@@ -6,12 +6,8 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(96, 147, 243);
-    /* background-image: url('/static/assets/flowers.jpg'); */
     background-image: url('/static/assets/wall.jpg');
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed;
-    background-position: center;  */
 }
 
 .top {
@@ -20,8 +16,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgba(250, 250, 250, 0.616); 
-    /* border-bottom: 3px solid rgba(164, 189, 186, 0.8); */
-    /* background-color: #c9c296; */
 }
 
 h1 {
@@ -74,36 +68,6 @@ input {
     background-color: rgba(37, 59, 105, 0.904);
 }
 
-
-/* drop */
-.drop_container {
-    width: 80vw;
-    min-height: 73vh;
-    margin: 1rem auto;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgba(37, 59, 105, 0.904);
-    box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.781);
-    position: relative;
-}
-
-.drop_card {
-    width: 15rem;
-    height: 15rem;
-    margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem;
-    background-color: rgb(236, 243, 142);
-    /* box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.66); */
-    box-shadow: 4px 3px 9px -1px rgba(0,0,0,0.43);
-    position: relative;
-}
-
-.btn {
-    cursor: pointer;
-}
 .btn-item {
     padding: 0.8rem 1rem;
    
@@ -124,15 +88,46 @@ a {
     color: #000;
 }
 
+/* drop */
+.drop_container {
+    width: 80vw;
+    min-height: 73vh;
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(37, 59, 105, 0.904);
+    box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.781);
+    position: relative;
+}
+
+.drop_card {
+    width: 15rem;
+    min-height: 15rem;
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 1rem;
+    background-color: rgb(236, 243, 142);
+    box-shadow: 4px 3px 9px -1px rgba(0,0,0,0.43);
+    position: relative;
+}
+
 .scotch {
     width: 8rem;
     height: 2rem;
     background-color: rgba(239, 243, 189, 0.671);
-    /* border: 1px solid rgba(39, 39, 44, 0.884); */
     position: relative;
     top: -25px;
     left: 35px;
     transform: rotate(-3deg);
+}
+
+.sortable-chosen {
+    box-shadow: 5px 6px 8px -4px rgba(250, 249, 249, 0.86);
+}
+.sortable-drag {
+    opacity: 0;
 }
 
 .edit_container {
@@ -160,15 +155,6 @@ footer {
     align-items: center;
     margin-bottom: auto;
     padding: 1rem;
+    color: rgb(46, 46, 46);
     background-color: rgba(239, 240, 241, 0.5);
-}
-
-
-
-.sortable-chosen {
- box-shadow: 5px 6px 8px -4px rgba(250, 249, 249, 0.86);
-}
-
-.sortable-drag {
-    opacity: 0;
 }
